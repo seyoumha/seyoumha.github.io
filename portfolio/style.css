@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#container{
+    width: 970px;
+    background-color: #6f5964;
+    margin: 0 auto;
+}
+.images{
+    height: 300px;
+    width: 45%;
+    float: left;
+    border: 5px solid lightgray;
+}
+#header{
+    background-color: lightgray;
+    height: 40px;
+    width: 890px;
+    padding: 10px 40px 0px 40px;
+}
+#header h1{
+    float: left;
+}
+#header h2{
+    float: right;
+}
+
+.about-me{
+    height: 310px;
+    width: 475px;
+    margin-left: 20px;
+    display: inline-block;
+    background-color: white;
+    font-size: large;
+}
+.about-me p{
+    padding: 10px;
+}
+
+#content h2{
+    padding: 10px;
+    background: linear-gradient(#999, #666,#999 );
+    color: white;
+}
+.section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column{
+    background: linear-gradient(to right, #fff,#F2DDF8 );
+    width: 300px;
+}
+
+#content{
+    margin: 20px;
+}
+.bottom-images{
+    width: 300px;
+    height:190px;
+}
+
+.txt{
+    padding: 10px;
+    height: 210px;
+}
+.tech{
+    background-color: #fff;
+    padding: 10px;
+}
+.tech-img{
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+    background-color: white;
+    margin: -22px 20px;
+}
+.tila{
+    float: left;
+}
+.tifa{
+    display: inline-block;
+}
+.tife{
+    float: right;
+    margin-top: -147px;
+}
+.tech img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 10px 0
+}
+.buttons{
+    height: 20px;
+    width: 70px;
+    padding: 4px 7px 7px;
+    background-color: green;
+    border-radius: 20px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    
+}
+.btnfam{
+    height: 20px;
+    width: 120px;
+}
+.btnfiv{
+    height: 20px;
+    width: 100px;
+}
+#footer{
+    background-color: lightgray;
+    height: 40px;
+    width: 910px;
+    margin-top: 50px;
+    /* margin: 32px 20px 0 30px; */
+    padding: 20px 30px 30px 30px;
+    text-align: center;
+}
+#footer img{
+    height: 15px;
+    width: 15px;
+    padding-bottom: 0px;
+}
