@@ -6,12 +6,12 @@
 	width: 1000px;
 	margin: 0 auto;
 	background-color: #d3d3d3;
+	padding: 20px;
 }
 .images {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	border: 1px solid red;
 }
 img {
 	width: 60%;
@@ -20,4 +20,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+h1 {
+	text-align: center;
 }
