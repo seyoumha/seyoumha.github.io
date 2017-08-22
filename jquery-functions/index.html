@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      jQuery Functions
+    </title>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.hide').click(function(){
+            $('.hide-text').hide();
+          })
+          $('.show').click(function(){
+            $('.hide-text').show();
+          })
+          $('.toggle').click(function(){
+            $('.toggle-text').toggle();
+          })
+          // slides
+          // 
+          $('.slide-down-txt').hide();
+          $('.slide-down').click(function(){
+            $('.slide-down-txt').slideDown();
+          })
+          $('.slide-up').click(function(){
+            $('.slide-up-txt').slideUp();
+          })
+          $('.slide-toggle').click(function(){
+            $('.slide-toggle-txt').slideToggle();
+          })
+
+          // .fadeIn, .fadeOut, .addClass
+          $('.fade-in-txt').hide();
+          $('.fade-in').click(function(){
+            $('.fade-in-txt').fadeIn();
+          })
+          $('.fade-out').click(function(){
+            $('.fade-out-txt').fadeOut();
+          })
+          $('.add-class').click(function(){
+            $('.add-class-txt').addClass("red");
+          })
+          // .before, .after, .append, .html 
+          $('.hi').click(function(){
+            $('.hi').before('Hi ');
+          })
+          $('.goodbye').click(function(){
+            $('.goodbye').after('Goodbye ');
+          })
+          $('.fun-stuff').click(function(){
+            $('.fun-stuff').append("<span> &nbspFun Stuff</span>");
+          })
+          // .val, .data, .attr, .text
+          $('#txt-box-txt').click(function(){
+            var value = $('#txt-box-txt').val();
+            $(".valTxt").text(value);
+          })
+          var title = $('em').attr('title');
+          $('.attr-title').text(title);
+
+          $(".data-btn").click(function(){
+            $(".dataDiv").data({"name":"Hanna","sex":"Female"});
+            var val = $(".dataDiv").data("name");
+            alert(val);
+            });
+
+        });
+
+
+      </script>
+
+  </head>
+  <body>
+    <div id="container">
+      <h1>.hide, .show,.toggle</h1>
+      <div id="layout">
+        <div class='group'>
+          <button class="hide">Hide text</button>
+          <p class="hide-text">Sample text for jQuery</p>
+          <button class="show">Show text</button>
+         </div> 
+        <button class="toggle">Toggle text</button>
+        <p class="toggle-text">Sample text for jQuery</p>
+      </div>
+      <!-- slide -->
+      <h1>.slideDown, .slideUp, .slideToggle</h1>
+      <div id="layout">
+        <button class="slide-down">Slide Down</button>
+        <p class="slide-down-txt">This text will slide Down.</p>
+        <button class="slide-up">Slide UP</button>
+        <p class="slide-up-txt">This text will slide up.</p>
+        <button class="slide-toggle">Slide Toggle</button>
+        <p class="slide-toggle-txt">This text will slide toggle.</p>
+      </div>
+      <!-- fadeIn, fadeOut, addClass -->
+      <h1>.fadeIn, .fadeOut, .addClass</h1>
+      <div id="layout">
+        <button class="fade-in">Fade In</button>
+        <p class="fade-in-txt">This text will fade in.</p>
+        <button class="fade-out">Fade Out</button>
+        <p class="fade-out-txt">This text will fade-out</p>
+        <button class="add-class">Add Class</button>
+        <p class="add-class-txt">This button will add a class red to this text</p>
+      </div>
+
+      <!-- .before, .after, .append, .html, -->
+      <h1>.before, .after, .append, .html,</h1>
+      <div>
+        <span class="hi">Click to add 'hello' to this text</span><br/>
+        <span class="goodbye">Click to add 'goodbye' to this text </span><br/>
+        <span class="fun-stuff">Click to append more text</span>
+      </div>
+      <h1> .val, .data, .attr, .text</h1>
+      <div>
+        <input type="text" id="txt-box-txt" value="Value of the Text">
+        <span class="valTxt"></span>
+        <p class="atr"> This expample shows how <em title= "attribute" >.attr</em>
+         works </p>
+         The title of the emphasis is <span class="attr-title"></span><br/><br/>
+         <p>The next section will attach data to the "data div" and alert it on 'Attach Data' click</p>
+        <button class="data-btn">Attach Data</button>
+        <div class="dataDiv"></div>
+        
+      </div>
+
+    </div>
+  </body>
+</html>

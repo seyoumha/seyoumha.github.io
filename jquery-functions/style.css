@@ -1,0 +1,56 @@
+*{
+  margin= 0;
+  padding=0;
+}
+#container{
+  width: 1000px;
+  margin: 0 auto;
+}
+#layout{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 20px;
+}
+button{
+  width: 100px;
+  height: 40px;
+  background-color: orange;
+  font-size: 14px;
+
+}
+h1{
+  text-align: center;
+}
+p{
+  font-size: 18px;
+}
+.group{
+  width: 600px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.red{
+  color: red;
+}
+.fun-stuff span{
+  color: orange;
+}
+em{
+  color: green;
+}
+.attr-title{
+  color: blue;
+}
+.valTxt{
+  color: pink;
+}
+.data-btn-retrieve, .data-btn{
+  width: 250px;
+}
+
+
+
