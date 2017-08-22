@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+      Hover in/out
+    </title>
+    <meta charset="UTF-8">
+    	<link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $('img').hover(function(){
+          $(this).attr("src", "img2.jpeg");
+          },
+          function(){
+            $(this).attr("src", "img1.jpeg")
+          }
+        );
+
+    });
+
+      </script>
+	</head>
+	<body>
+      <div id="container">
+      <h1>Hover in/Out</h1>
+        <img src="img1.jpeg" alt="city">
+        <img src="img1.jpeg" alt="beach">
+        <img src="img1.jpeg" alt="city">
+        <img src="img1.jpeg" alt="beach">
+        <img src="img1.jpeg" alt="city">
+        <img src="img1.jpeg" alt="beach">
+        <img src="img1.jpeg" alt="city">
+        <img src="img1.jpeg" alt="beach">
+      </div>
+	</body>
+</html>
