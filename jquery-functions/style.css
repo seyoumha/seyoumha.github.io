@@ -5,6 +5,8 @@
 #container{
   width: 1000px;
   margin: 0 auto;
+  background-color: #D3D3D3;
+  padding: 20px;
 }
 #layout{
   display: flex;
