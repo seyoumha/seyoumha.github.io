@@ -1,0 +1,23 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #d3d3d3;
+}
+.images {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 1px solid red;
+}
+img {
+	width: 60%;
+}
+.cat .ninja {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
