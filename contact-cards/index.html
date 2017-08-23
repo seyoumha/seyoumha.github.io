@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+      Contact Card
+    </title>
+    <meta charset="UTF-8">
+    	<link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'>
+        
+      </script> 
+      <script type="text/javascript">
+
+        $(document).ready(function(){
+          $(document).on('click', '#sub', function(e){
+            e.preventDefault();
+            var fn = $("input[name= 'first-name']").val();
+            var ln = $("input[name= 'last-name']").val();
+            var des = $('#txt-area').val();
+            $('.info').append('<div class="card"><h1>'+fn+" "+ln+'</h1><p>Click for description!</p></div><br/>');
+            $('.card').click(function(){
+              $(this).text(des);
+            })
+            
+        
+
+          });
+        });
+
+    </script>
+	</head>
+	<body>
+    <div id="container">
+      <div class="layout">
+        <form>
+          First name: <input type='text' name="first-name"><br/>
+          Last name:  <input type='text' name="last-name"><br/></br>
+          Description: </br> <textarea id="txt-area"name="description" ></textarea><br/>
+          <input id="sub"type="submit" value="Submit"> 
+        </form>
+        <div class='info'></div>
+      </div>
+            
+    </div>
+	</body>
+</html>

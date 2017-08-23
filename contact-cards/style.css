@@ -1,0 +1,51 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	background-color: #d3d3d3;
+	padding-top: 20px;
+}
+body {
+	font-size: 20px;
+}
+form {
+	margin: 20px;
+}
+input,
+#txt-area {
+	font-size: 20px;
+}
+.card {
+	border: 2px solid black;
+	font-size: 18px;
+	width: 300px;
+	padding: 30px;
+	margin: 20px;
+}
+.info {
+	position: relative;
+	bottom: 400px;
+	left: 500px;
+}
+.layout {
+	width: 600px;
+	margin: 20px;
+}
+form {
+	font-size: 30px;
+}
+input {
+	width: 150px;
+	height: 30px;
+}
+#sub {
+	height: 30px;
+	background-color: orange;
+}
+#txt-area {
+	width: 300px;
+	height: 200px;
+}
