@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+      Users
+    </title>
+    <meta charset="UTF-8">
+    	<link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('form').submit(function(event){
+        event.preventDefault();
+        var fn = $("input[name= 'first-name']").val();
+        var ln = $("input[name= 'last-name']").val();
+        var em = $("input[name= 'email-address']").val();
+        var con = $("input[name= 'contact']").val();
+        $('table').append("<tr><td>"+fn+"</td><td>"+ln+"</td><td>"+em+"</td><td>"+con+"</td></tr>")
+
+        // $('table').append("<tr><td></td><td></td><td></td><td></td></tr>");
+      });
+
+
+    });
+
+
+
+
+  </script>
+	</head>
+	<body>
+      <div id="container">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email Address</th>
+          <th>Contact#</th>
+        </tr>
+      </table>
+      <h1>Add User</h1>
+      <form>
+        First Name: <input type='text' name='first-name' placeholder="First Name"><br/>
+        Last Name: <input type='text' name='last-name' placeholder="Last Name"><br/>
+        Email Address: <input type='text' name='email-address' placeholder="Email Address"><br/>
+        Contact No: <input type='text' name='contact' placeholder="Email Address"><br/>
+        <input type="submit" value="Submit">
+      </form>
+
+      </div>
+	</body>
+</html>
