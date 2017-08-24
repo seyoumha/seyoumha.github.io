@@ -12,19 +12,27 @@
       <script type="text/javascript">
 
         $(document).ready(function(){
+          var des;
           $(document).on('click', '#sub', function(e){
             e.preventDefault();
             var fn = $("input[name= 'first-name']").val();
             var ln = $("input[name= 'last-name']").val();
-            var des = $('#txt-area').val();
-            $('.info').append('<div class="card"><h1>'+fn+" "+ln+'</h1><p>Click for description!</p></div><br/>');
-            $('.card').click(function(){
-              $(this).text(des);
-            })
-            
-        
-
+            des = $('#txt-area').val();
+            $('.info').append('\
+              <div><div class="card">\
+                <h1>'+fn+' '+ln+'</h1><p>Click for description!</p>\
+              </div><br/>\
+              <div class="desc">'+des+'</div></div>\
+              ');
+           
           });
+
+          $(document).on('click', '.card',function(){
+              $(this).hide();
+              $(this).siblings('.desc').show();
+          });
+
+          
         });
 
     </script>

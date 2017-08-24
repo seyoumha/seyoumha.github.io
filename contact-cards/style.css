@@ -25,6 +25,14 @@ input,
 	padding: 30px;
 	margin: 20px;
 }
+.desc {
+	display: none;
+	border: 2px solid black;
+	font-size: 18px;
+	width: 300px;
+	padding: 30px;
+	margin: 20px;
+}
 .info {
 	position: relative;
 	bottom: 400px;
